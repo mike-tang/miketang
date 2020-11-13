@@ -327,5 +327,25 @@ export default {
       },
     },
   },
-  
+  forms: {
+    select: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      fontSize: [1, 1, 1],
+      color: 'foreground.primary',
+      borderRadius: 'compact',
+      borderColor: 'border.default',
+      transition: 'border 0.2s ease-out',
+      '&:focus': {
+        borderColor: 'border.active',
+        outline: 'none',
+        transition: 'border 0.2s ease-out',
+      },
+      '&:disabled': {
+        color: 'accent.4',
+        bg: 'accent.2',
+        cursor: 'not-allowed',
+      },
+    },
+  }
 }

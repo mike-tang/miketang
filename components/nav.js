@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Fragment } from 'react'
 import { jsx, Styled, Flex, Box, Container } from 'theme-ui'
 import Logo from './logo'
+import ThemeSelector from './theme-selector'
 
 const Nav = () => {
 
@@ -16,7 +17,14 @@ const Nav = () => {
           variant: 'layout.nav',
         }}
       >
-        <Container>
+        <Flex
+          sx={{
+            width: '100%',
+            maxWidth: 'container',
+            margin: '0 auto',
+            justifyContent: 'space-between'
+          }}
+        >
           <Link href="/" passHref>
             <Styled.a 
               aria-label="Go to Mike Tang's home page"
@@ -33,7 +41,8 @@ const Nav = () => {
               </Box>
             </Styled.a>
           </Link>
-        </Container>
+          <ThemeSelector />
+        </Flex>
       </Flex>
     </Fragment>
   )
