@@ -13,7 +13,6 @@ const Home = () => {
       </Head>
       <Flex
         sx={{
-          minHeight: theme => `calc(100vh - ${theme.sizes.nav})`,
           flexDirection: 'column',
           backgroundColor: 'background.primary',
           px: 3,
@@ -24,7 +23,6 @@ const Home = () => {
           sx={{
             width: '100%',
             maxWidth: '640px',
-            py: [6, 7, 8],
             margin: '0 auto'
           }}
         >
@@ -41,14 +39,14 @@ const Home = () => {
                 textAlign: 'left',
                 fontWeight: 'heading',
                 textRendering: 'optimizelegibility',
-                pb: 4,
+                pb: 6,
               }}
             >
               Mike Tang
             </Styled.p>
             <Styled.p 
               sx={{
-                fontSize: [2, 4, 4],
+                fontSize: [3, 4, 4],
                 lineHeight: 'body',
                 textAlign: 'left',
                 fontWeight: 'body',
@@ -60,12 +58,11 @@ const Home = () => {
             </Styled.p>
             <Styled.p 
               sx={{
-                fontSize: [2, 4, 4],
+                fontSize: [3, 4, 4],
                 lineHeight: 'body',
                 textAlign: 'left',
                 fontWeight: 'body',
-                textRendering: 'optimizelegibility',
-                pb: 4,
+                textRendering: 'optimizelegibility'
               }}
             >
               Building Ko.

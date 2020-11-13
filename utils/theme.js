@@ -9,7 +9,7 @@ export default {
   breakpoints: ['40em', '52em', '64em'],
   sizes: {
     nav: '64px',
-    container: 768,
+    container: 640,
     button: '40px',
     input: '40px',
   },
