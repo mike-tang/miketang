@@ -14,9 +14,7 @@ const Home = () => {
       <Flex
         sx={{
           flexDirection: 'column',
-          backgroundColor: 'background.primary',
           px: 3,
-          transition: 'background-color 0.2s ease-out',
         }}
       >
         <Box

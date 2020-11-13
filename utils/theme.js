@@ -52,8 +52,8 @@ export default {
     },
     text: '#444',
     background: {
-      primary: '#FFF',
-      secondary: '#F8F8F8'
+      primary: '#F8F8F8',
+      secondary: '#EEEEEE'
     },
     foreground: {
       primary: '#444',
@@ -89,8 +89,8 @@ export default {
         },
         text: '#DDD',
         background: {
-          primary: '#000',
-          secondary: '#111'
+          primary: '#111111',
+          secondary: '#222222'
         },
         foreground: {
           primary: '#DDD',
@@ -121,14 +121,10 @@ export default {
       px: 3,
       my: 8,
       alignItems: 'center',
-      backgroundColor: 'background.primary',
       color: 'foreground.primary',
-      // boxShadow: theme => `inset 0px -1px 0px ${theme.colors.border.default}`,
-      zIndex: 100,
-      transition: 'background-color 0.2s ease-out, box-shadow 0.2s ease-out',
+      zIndex: 100
     },
     main: {
-      // bg: 'background.secondary',
       color: 'foreground.primary',
       transition: 'background-color 0.2s ease-out, color 0.2s ease-out',
     },
