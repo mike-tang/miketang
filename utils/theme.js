@@ -118,8 +118,8 @@ export default {
   layout: {
     nav: {
       display: 'flex',
-      minHeight: 'nav',
       px: 3,
+      my: 8,
       alignItems: 'center',
       backgroundColor: 'background.primary',
       color: 'foreground.primary',
