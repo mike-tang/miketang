@@ -314,15 +314,16 @@ export default {
       },
     },
     logo: {
+      display: 'inline-flex',
       lineHeight: 0,
-      color: 'primary.default',
+      color: 'foreground.primary',
       transition: 'all 0.2s ease-out',
       ':hover': {
-        color: 'primary.dark',
+        color: 'foreground.secondary',
         transition: 'all 0.2s ease-out',
       },
       ':focus': {
-        color: 'primary.dark',
+        color: 'foreground.secondary',
       },
     },
   },
