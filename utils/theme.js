@@ -128,7 +128,7 @@ export default {
       transition: 'background-color 0.2s ease-out, box-shadow 0.2s ease-out',
     },
     main: {
-      bg: 'background.secondary',
+      // bg: 'background.secondary',
       color: 'foreground.primary',
       transition: 'background-color 0.2s ease-out, color 0.2s ease-out',
     },
@@ -183,7 +183,8 @@ export default {
       textRendering: 'optimizeLegibility',
       WebkitFontSmoothing: 'antialiased',
       MozOsxFontSmoothing: 'grayscale',
-      backgroundColor: 'background.primary'
+      backgroundColor: 'background.primary',
+      transition: 'background-color 0.2s ease-out',
     },
     h1: {
       color: 'foreground.primary',
