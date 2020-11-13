@@ -181,8 +181,8 @@ export default {
       lineHeight: 'body',
       fontWeight: 'body',
       textRendering: 'optimizeLegibility',
-      '-webkit-font-smoothing': 'antialiased',
-      '-moz-osx-font-smoothing': 'grayscale',
+      WebkitFontSmoothing: 'antialiased',
+      MozOsxFontSmoothing: 'grayscale',
       backgroundColor: 'background.primary'
     },
     h1: {
