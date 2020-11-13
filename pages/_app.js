@@ -1,6 +1,6 @@
 import React from 'react'
 import NextApp from 'next/app'
-import { ThemeProvider, Styled } from 'theme-ui'
+import { ThemeProvider } from 'theme-ui'
 import theme from '../utils/theme'
 import Layout from '../components/layout'
 
