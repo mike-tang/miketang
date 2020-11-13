@@ -182,7 +182,8 @@ export default {
       fontWeight: 'body',
       textRendering: 'optimizeLegibility',
       '-webkit-font-smoothing': 'antialiased',
-      '-moz-osx-font-smoothing': 'grayscale'
+      '-moz-osx-font-smoothing': 'grayscale',
+      backgroundColor: 'background.primary'
     },
     h1: {
       color: 'foreground.primary',
