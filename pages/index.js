@@ -14,7 +14,7 @@ const Home = () => {
       <Flex
         sx={{
           flexDirection: 'column',
-          px: 3,
+          px: 4,
         }}
       >
         <Box
@@ -30,40 +30,48 @@ const Home = () => {
               pb: 8
             }}
           >
-            <Styled.p 
+            <Styled.h1
               sx={{
-                fontSize: [5, 5, 6],
+                fontSize: 5,
                 lineHeight: 'heading',
                 textAlign: 'left',
                 fontWeight: 'heading',
-                textRendering: 'optimizelegibility',
                 pb: 6,
               }}
             >
               Mike Tang
-            </Styled.p>
+            </Styled.h1>
             <Styled.p 
               sx={{
-                fontSize: [3, 4, 4],
+                fontSize: 3,
                 lineHeight: 'body',
                 textAlign: 'left',
                 fontWeight: 'body',
-                textRendering: 'optimizelegibility',
-                pb: 4,
+                pb: 6,
               }}
             >
               Product designer and developer.
             </Styled.p>
             <Styled.p 
               sx={{
-                fontSize: [3, 4, 4],
+                fontSize: 3,
                 lineHeight: 'body',
                 textAlign: 'left',
-                fontWeight: 'body',
-                textRendering: 'optimizelegibility'
+                fontWeight: 'body'
               }}
             >
-              Building Ko.
+              {`Building `}
+              <Styled.a
+                href="https://ko.education"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  variant: 'links.text'
+                }}
+              >
+                Ko
+              </Styled.a> 
+              {` to equalize access to education.`}
             </Styled.p>
           </Box>
         </Box>
