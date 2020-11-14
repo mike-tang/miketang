@@ -31,7 +31,7 @@ export default {
     bold: 500
   },
   lineHeights: {
-    body: 1.5,
+    body: 1.6,
     heading: 1.25,
     button: '40px',
   },
