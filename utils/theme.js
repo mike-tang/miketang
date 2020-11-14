@@ -316,6 +316,7 @@ export default {
       },
       ':focus': {
         color: 'foreground.secondary',
+        transition: 'all 0.2s ease-out',
       },
     },
   },
