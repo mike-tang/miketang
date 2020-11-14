@@ -32,7 +32,6 @@ const Home = () => {
           >
             <Styled.h1
               sx={{
-                fontSize: 5,
                 lineHeight: 'heading',
                 textAlign: 'left',
                 fontWeight: 'heading',

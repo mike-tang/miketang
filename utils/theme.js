@@ -173,6 +173,7 @@ export default {
   },
   styles: {
     root: {
+      fontSize: '16px',
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',
@@ -184,38 +185,38 @@ export default {
     },
     h1: {
       color: 'foreground.primary',
-      fontSize: [6, 7, 8],
+      fontSize: 5,
       variant: 'text.heading',
       m: 0,
     },
     h2: {
       color: 'foreground.primary',
       variant: 'text.heading',
-      fontSize: 5,
+      fontSize: 4,
       m: 0,
     },
     h3: {
       color: 'foreground.primary',
       variant: 'text.heading',
-      fontSize: 4,
+      fontSize: 3,
       m: 0,
     },
     h4: {
       color: 'foreground.primary',
       variant: 'text.heading',
-      fontSize: 3,
+      fontSize: 2,
       m: 0,
     },
     h5: {
       color: 'foreground.primary',
       variant: 'text.heading',
-      fontSize: 2,
+      fontSize: 1,
       m: 0,
     },
     h6: {
       color: 'foreground.primary',
       variant: 'text.heading',
-      fontSize: 1,
+      fontSize: 0,
       m: 0,
     },
     p: {
