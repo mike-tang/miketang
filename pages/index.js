@@ -56,7 +56,8 @@ const Home = () => {
                 fontSize: 3,
                 lineHeight: 'body',
                 textAlign: 'left',
-                fontWeight: 'body'
+                fontWeight: 'body',
+                pb: 6
               }}
             >
               {`Building `}
@@ -71,6 +72,50 @@ const Home = () => {
                 Ko
               </Styled.a> 
               {` to equalize access to education.`}
+            </Styled.p>
+            <Styled.p 
+              sx={{
+                fontSize: 3,
+                lineHeight: 'body',
+                textAlign: 'left',
+                fontWeight: 'body',
+                pb: 6
+              }}
+            >
+              {`Find me elsewhere on `}
+              <Styled.a
+                href="https://www.linkedin.com/in/mctang/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  variant: 'links.text'
+                }}
+              >
+                LinkedIn
+              </Styled.a>
+              {`, `}
+              <Styled.a
+                href="https://www.github.com/mike-tang/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  variant: 'links.text'
+                }}
+              >
+                GitHub
+              </Styled.a>
+              {`, and `}
+              <Styled.a
+                href="https://www.twitter.com/miketang/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  variant: 'links.text'
+                }}
+              >
+                Twitter
+              </Styled.a>
+              {`.`}
             </Styled.p>
           </Box>
         </Box>
