@@ -283,31 +283,26 @@ export default {
     },
   },
   links: {
-    primary: {
-      color: 'primary.default',
-      fontWeight: 'bold',
-      transition: 'all 0.2s ease-out',
-      maxWidth: 'fit-content',
-      ':hover': {
-        color: 'primary.dark',
-        textDecoration: 'underline',
-        transition: 'all 0.2s ease-out',
-      },
-      ':focus': {
-        color: 'primary.dark',
-      },
-    },
-    secondary: {
+    text: {
       color: 'foreground.primary',
       fontWeight: 'bold',
+      backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
+      backgroundSize: '100% 1px',
+      backgroundPosition: '0 100%',
+      backgroundRepeat: 'no-repeat',
+      maxWidth: 'fit-content',
       transition: 'all 0.2s ease-out',
       ':hover': {
-        color: 'foreground.primary',
-        textDecoration: 'underline',
+        color: 'foreground.secondary',
+        textDecoration: 'none',
+        backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
         transition: 'all 0.2s ease-out',
       },
       ':focus': {
-        color: 'foreground.primary',
+        color: 'foreground.secondary',
+        textDecoration: 'none',
+        backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
+        transition: 'all 0.2s ease-out',
       },
     },
     logo: {
