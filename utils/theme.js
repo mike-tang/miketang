@@ -41,23 +41,23 @@ export default {
   },
   colors: {
     accent: {
-      1: '#F8F8F8',
-      2: '#EAEAEA',
-      3: '#DDDDDD',
-      4: '#888',
-      5: '#666',
-      6: '#444',
-      7: '#333',
-      8: '#111',
+      1: '#111',
+      2: '#333',
+      3: '#444',
+      4: '#666',
+      5: '#888',
+      6: '#DDD',
+      7: '#EAEAEA',
+      8: '#F8F8F8',
     },
-    text: '#444',
+    text: '#DDD',
     background: {
-      primary: '#F8F8F8',
-      secondary: '#EEEEEE'
+      primary: '#111111',
+      secondary: '#222222'
     },
     foreground: {
-      primary: '#444',
-      secondary: '#666'
+      primary: '#DDD',
+      secondary: '#888'
     },
     primary: {
       default: '#7762E1',
@@ -69,32 +69,31 @@ export default {
       dark: '#007B7A'
     },
     border: {
-      default: '#DDDDDD',
-      active: '#444'
+      default: '#333',
+      active: '#DDD'
     },
     modalOverlay: 'rgba(0,0,0, 0.75)',
     shadow: 'rgba(0,0,0, 0.2)',
-
     modes: {
-      dark: {
+      light: {
         accent: {
-          1: '#111',
-          2: '#333',
-          3: '#444',
-          4: '#666',
-          5: '#888',
-          6: '#DDD',
-          7: '#EAEAEA',
-          8: '#F8F8F8',
+          1: '#F8F8F8',
+          2: '#EAEAEA',
+          3: '#DDDDDD',
+          4: '#888',
+          5: '#666',
+          6: '#444',
+          7: '#333',
+          8: '#111',
         },
-        text: '#DDD',
+        text: '#444',
         background: {
-          primary: '#111111',
-          secondary: '#222222'
+          primary: '#F8F8F8',
+          secondary: '#EEEEEE'
         },
         foreground: {
-          primary: '#DDD',
-          secondary: '#888'
+          primary: '#444',
+          secondary: '#666'
         },
         primary: {
           default: '#7762E1',
@@ -106,12 +105,11 @@ export default {
           dark: '#007B7A'
         },
         border: {
-          default: '#333',
-          active: '#DDD'
+          default: '#DDDDDD',
+          active: '#444'
         },
         modalOverlay: 'rgba(0,0,0, 0.75)',
         shadow: 'rgba(0,0,0, 0.2)',
-
       },
     },
   },
