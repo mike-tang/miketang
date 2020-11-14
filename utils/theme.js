@@ -118,8 +118,8 @@ export default {
   layout: {
     nav: {
       display: 'flex',
-      px: 3,
-      my: 8,
+      px: 4,
+      my: [6, 6, 8],
       alignItems: 'center',
       color: 'foreground.primary',
       zIndex: 100
