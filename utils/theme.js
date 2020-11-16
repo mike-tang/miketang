@@ -150,6 +150,11 @@ export default {
       lineHeight: 'heading',
       fontWeight: 'heading',
       transition: 'color 0.2s ease-out',
+      '::selection': {
+        textShadow: 'none',
+        backgroundColor: 'foreground.primary',
+        color: 'background.primary'
+      },
     },
     body: {
       fontFamily: 'body',
@@ -157,6 +162,11 @@ export default {
       fontWeight: 'body',
       fontSize: 2,
       transition: 'color 0.2s ease-out',
+      '::selection': {
+        textShadow: 'none',
+        backgroundColor: 'foreground.primary',
+        color: 'background.primary'
+      },
     },
     overline: {
       fontFamily: 'body',
@@ -167,6 +177,11 @@ export default {
       letterSpacing: '2px',
       color: 'foreground.secondary',
       transition: 'color 0.2s ease-out',
+      '::selection': {
+        textShadow: 'none',
+        backgroundColor: 'foreground.primary',
+        color: 'background.primary'
+      },
     }
   },
   styles: {
@@ -303,6 +318,11 @@ export default {
         backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
         transition: 'all 0.2s ease-out',
       },
+      '::selection': {
+        textShadow: 'none',
+        backgroundColor: 'foreground.primary',
+        color: 'background.primary'
+      },
     },
     logo: {
       display: 'inline-flex',
@@ -337,6 +357,11 @@ export default {
         color: 'accent.4',
         bg: 'accent.2',
         cursor: 'not-allowed',
+      },
+      '::selection': {
+        textShadow: 'none',
+        backgroundColor: 'foreground.primary',
+        color: 'background.primary'
       },
     },
   }
