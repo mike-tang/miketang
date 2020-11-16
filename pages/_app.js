@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 import { useRouter } from 'next/router'
 
 const App = ({ Component, pageProps }) => {
+  
+  // Configure Google Analytics
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url) => {
