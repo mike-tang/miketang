@@ -64,7 +64,7 @@ const Home = () => {
             >
               Ko
             </Styled.a> 
-            {` to equalize access to education.`}
+            {` to equalize access to education. Launching early 2021.`}
           </Styled.p>
           <Styled.p 
             sx={{
