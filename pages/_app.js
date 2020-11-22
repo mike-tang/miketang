@@ -3,6 +3,7 @@ import { ThemeProvider } from 'theme-ui'
 import theme from '../utils/theme'
 import Layout from '../components/layout'
 import { useRouter } from 'next/router'
+import * as gtag from '../utils/gtag'
 
 const App = ({ Component, pageProps }) => {
   
