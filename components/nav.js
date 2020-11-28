@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import Link from 'next/link'
 import { Fragment } from 'react'
-import { jsx, Styled, Flex, Box, Container } from 'theme-ui'
+import { jsx, Styled, Flex, Box } from 'theme-ui'
 import Logo from './logo'
 import ThemeSelector from './theme-selector'
 
