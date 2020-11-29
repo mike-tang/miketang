@@ -1,15 +1,13 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
+/** @jsxImportSource theme-ui */
 import Link from 'next/link'
-import { Fragment } from 'react'
-import { jsx, Styled, Flex, Box } from 'theme-ui'
+import { Styled, Flex, Box } from 'theme-ui'
 import Logo from './logo'
 import ThemeSelector from './theme-selector'
 
 const Nav = () => {
 
   return (
-    <Fragment>
+    <>
       <Flex 
         as="nav" 
         sx={{
@@ -44,7 +42,7 @@ const Nav = () => {
           <ThemeSelector />
         </Flex>
       </Flex>
-    </Fragment>
+    </>
   )
 }
 

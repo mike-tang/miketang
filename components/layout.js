@@ -1,13 +1,11 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { Fragment } from 'react'
-import { jsx, Styled, Flex } from 'theme-ui'
+/** @jsxImportSource theme-ui */
+import { Styled, Flex } from 'theme-ui'
 import Head from './head'
 import Nav from './nav'
 
 const Layout = ({ children }) => {
   return (
-    <Fragment>
+    <>
       <Head />
       <Flex
         sx={{
@@ -28,7 +26,7 @@ const Layout = ({ children }) => {
           {children}
         </Styled.div>
       </Flex>
-    </Fragment>
+    </>
   )
 }
 

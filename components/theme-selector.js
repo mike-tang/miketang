@@ -1,6 +1,5 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx, Styled, Select, useColorMode } from 'theme-ui'
+/** @jsxImportSource theme-ui */
+import { Styled, Select, useColorMode } from 'theme-ui'
 
 const ThemeSelector = () => {
   const [colorMode, setColorMode] = useColorMode()

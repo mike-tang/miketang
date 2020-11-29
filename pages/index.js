@@ -1,6 +1,5 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx, Styled, Flex, Box } from 'theme-ui'
+/** @jsxImportSource theme-ui */
+import { Styled, Flex, Box } from 'theme-ui'
 
 const Home = () => {
   return (
