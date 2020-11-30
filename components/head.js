@@ -14,13 +14,14 @@ const Head = ({
       {/* Title */}
       <title>{title}</title>
       <meta property="og:title" content={title} />
+      <meta property="og:site_name" content={title} />
 
       {/* Description */}
       <meta name="description" content={description} />
       <meta property="og:description" content={description} />
 
       {/* URL */}
-      <meta property="og:url" content="https://miketang.co" />
+      <meta property="og:url" content={url} />
 
       {/* Image */}
       <meta name="twitter:image" content={image} />
