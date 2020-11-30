@@ -1,22 +1,33 @@
 import NextHead from 'next/head'
 
+const ogImage = 'https://res.cloudinary.com/miketang/image/upload/v1606712282/og-image_aan6rq.png'
+
 const Head = ({
   title = 'Mike Tang',
-  description = 'Product designer and developer'
+  description = 'Product designer and developer',
+  image = ogImage,
+  url = 'https://miketang.co'
 }) => {
   
   return (
     <NextHead>
       {/* Title */}
       <title>{title}</title>
-      <meta name="og:title" content={title} />
+      <meta property="og:title" content={title} />
 
       {/* Description */}
       <meta name="description" content={description} />
-      <meta name="og:description" content={description} />
+      <meta property="og:description" content={description} />
 
       {/* URL */}
-      <meta name="og:url" content="https://miketang.co" />
+      <meta property="og:url" content="https://miketang.co" />
+
+      {/* Image */}
+      <meta name="twitter:image" content={image} />
+      <meta property="og:image" content={image} />
+      <meta property="og:image:secure_url" content={image} />
+      <meta property="og:image:width" content="2400" />
+      <meta property="og:image:height" content="1260" />
 
       {/* Favicons */}
       <link rel="manifest" href="/favicons/manifest.json" />
@@ -27,9 +38,13 @@ const Head = ({
       <meta name="theme-color" content="#111111" />
 
       {/* Other */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="author" content="Mike Tang" />
+      <meta name="apple-mobile-web-app-title" content="Mike Tang" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@miketang" />
+      <meta property="og:type" content="website" />
 
     </NextHead>
   )
