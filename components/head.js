@@ -6,7 +6,7 @@ const Head = ({
   title = 'Mike Tang',
   description = 'Product designer and developer',
   image = ogImage,
-  url = 'https://miketang.co'
+  url = 'https://miketang.co/'
 }) => {
   
   return (
@@ -46,6 +46,7 @@ const Head = ({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@miketang" />
       <meta property="og:type" content="website" />
+      <link rel="canonical" href={url} />
 
     </NextHead>
   )
