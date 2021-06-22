@@ -63,7 +63,7 @@ const Home = () => {
             >
               Ko
             </Styled.a> 
-            {` to support independent education.`}
+            {` to support self-directed education.`}
           </Styled.p>
           <Styled.p 
             sx={{
