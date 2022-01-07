@@ -6,7 +6,7 @@ const Head = ({
   title = 'Mike Tang',
   description = 'Product designer and developer',
   image = ogImage,
-  url = 'https://miketang.co/'
+  url = 'https://tang.is/'
 }) => {
   
   return (
