@@ -1,11 +1,11 @@
 /** @jsxImportSource theme-ui */
-import { Styled, Select, useColorMode } from 'theme-ui'
+import { Themed, Select, useColorMode } from 'theme-ui'
 
 const ThemeSelector = () => {
   const [colorMode, setColorMode] = useColorMode()
 
   return (
-    <Styled.div
+    <Themed.div
       sx={{
         display: 'block',
         flex: '2 0 auto',
@@ -24,7 +24,7 @@ const ThemeSelector = () => {
         <option value="default">Dark</option>
         <option value="light">Light</option>
       </Select>
-    </Styled.div>
+    </Themed.div>
   )
 }
 

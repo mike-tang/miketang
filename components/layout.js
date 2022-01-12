@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Styled, Flex } from 'theme-ui'
+import { Themed, Flex } from 'theme-ui'
 import Head from './head'
 import Nav from './nav'
 
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         }}
       >
         <Nav />
-        <Styled.div 
+        <Themed.div 
           as="main"
           sx={{
             width: '100%',
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
           }}
         >
           {children}
-        </Styled.div>
+        </Themed.div>
       </Flex>
     </>
   )

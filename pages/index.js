@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Styled, Flex, Box } from 'theme-ui'
+import { Themed, Flex, Box } from 'theme-ui'
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
             pb: 8
           }}
         >
-          <Styled.h1
+          <Themed.h1
             sx={{
               lineHeight: 'heading',
               textAlign: 'left',
@@ -31,8 +31,8 @@ const Home = () => {
             }}
           >
             Mike Tang
-          </Styled.h1>
-          <Styled.p 
+          </Themed.h1>
+          <Themed.p 
             sx={{
               fontSize: 3,
               lineHeight: 'body',
@@ -42,8 +42,8 @@ const Home = () => {
             }}
           >
             Product designer and developer.
-          </Styled.p>
-          <Styled.p 
+          </Themed.p>
+          <Themed.p 
             sx={{
               fontSize: 3,
               lineHeight: 'body',
@@ -53,7 +53,7 @@ const Home = () => {
             }}
           >
             {`Building `}
-            <Styled.a
+            <Themed.a
               href="https://ko.education"
               target="_blank"
               rel="noopener noreferrer"
@@ -62,10 +62,10 @@ const Home = () => {
               }}
             >
               Ko
-            </Styled.a> 
+            </Themed.a> 
             {` to support self-directed education.`}
-          </Styled.p>
-          <Styled.p 
+          </Themed.p>
+          <Themed.p 
             sx={{
               fontSize: 3,
               lineHeight: 'body',
@@ -75,7 +75,7 @@ const Home = () => {
             }}
           >
             {`Find me elsewhere on `}
-            <Styled.a
+            <Themed.a
               href="https://www.linkedin.com/in/mctang/"
               target="_blank"
               rel="noopener noreferrer"
@@ -84,9 +84,9 @@ const Home = () => {
               }}
             >
               LinkedIn
-            </Styled.a>
+            </Themed.a>
             {`, `}
-            <Styled.a
+            <Themed.a
               href="https://www.github.com/mike-tang/"
               target="_blank"
               rel="noopener noreferrer"
@@ -95,9 +95,9 @@ const Home = () => {
               }}
             >
               GitHub
-            </Styled.a>
+            </Themed.a>
             {`, and `}
-            <Styled.a
+            <Themed.a
               href="https://www.twitter.com/miketang/"
               target="_blank"
               rel="noopener noreferrer"
@@ -106,9 +106,9 @@ const Home = () => {
               }}
             >
               Twitter
-            </Styled.a>
+            </Themed.a>
             {`.`}
-          </Styled.p>
+          </Themed.p>
         </Box>
       </Box>
     </Flex>
