@@ -39,21 +39,10 @@ const Home = () => {
               lineHeight: 'body',
               textAlign: 'left',
               fontWeight: 'body',
-              pb: 6,
-            }}
-          >
-            Product designer and developer.
-          </Themed.p>
-          <Themed.p 
-            sx={{
-              fontSize: 3,
-              lineHeight: 'body',
-              textAlign: 'left',
-              fontWeight: 'body',
               pb: 6
             }}
           >
-            {`Building `}
+            {`Designing for scale and impact. Building efficient software and digital experiences. Working on `}
             <Themed.a
               href="https://ko.education"
               target="_blank"
@@ -64,12 +53,12 @@ const Home = () => {
             >
               Ko
             </Themed.a> 
-            {` to support self-directed education.`}
+            {` to support the education economy.`}
           </Themed.p>
 
           {/* Social links */}
           <SocialLinks />
-          
+
         </Box>
       </Box>
     </Flex>
