@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Themed, Flex, Box } from 'theme-ui'
-import SocialLinks from './components/links-social'
+import SocialLinks from '@/components/links-social'
 
 const Home = () => {
   return (
