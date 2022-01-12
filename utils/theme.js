@@ -198,7 +198,7 @@ export default {
     },
     h1: {
       color: 'foreground.primary',
-      fontSize: 5,
+      fontSize: 8,
       variant: 'text.heading',
       m: 0,
     },
