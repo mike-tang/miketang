@@ -1,8 +1,8 @@
 /** @jsxImportSource theme-ui */
 import Link from 'next/link'
 import { Themed, Flex, Box } from 'theme-ui'
-import Logo from './logo'
-import ThemeSelector from './theme-selector'
+import Logo from '@/components/logo'
+import ThemeSelector from '@/components/theme-selector'
 
 const Nav = () => {
 

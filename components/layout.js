@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Themed, Flex } from 'theme-ui'
-import Head from './head'
-import Nav from './nav'
+import Head from '@/components/head'
+import Nav from '@/components/nav'
 
 const Layout = ({ children }) => {
   return (
