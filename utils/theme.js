@@ -20,7 +20,7 @@ export default {
     round: '40px',
   },
   fonts: {
-    body: 'inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    body: '"Mulish", system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif',
     heading: 'inherit',
     monospace: 'Menlo, monospace'
   },
