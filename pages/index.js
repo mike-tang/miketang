@@ -28,7 +28,8 @@ const Home = () => {
               lineHeight: 'heading',
               textAlign: 'left',
               fontWeight: 'heading',
-              pb: 6,
+              pb: 4,
+              letterSpacing: '-4px'
             }}
           >
             Mike Tang
