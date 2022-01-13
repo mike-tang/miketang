@@ -21,7 +21,7 @@ const ThemeSelector = () => {
           setColorMode(e.target.value)
         }}
       >
-        <option value="default">Dark</option>
+        <option value="dark">Dark</option>
         <option value="light">Light</option>
       </Select>
     </Themed.div>
