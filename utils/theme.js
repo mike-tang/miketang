@@ -116,11 +116,17 @@ export default {
   layout: {
     nav: {
       display: 'flex',
-      px: 4,
-      pt: 4,
       alignItems: 'center',
       color: 'foreground.primary',
-      zIndex: 100
+      zIndex: 100,
+      inner: {
+        width: '100%',
+        maxWidth: 'container',
+        margin: '0 auto',
+        py: '24px',
+        boxShadow: theme => `inset 0px -1px 0px ${theme.colors.border.default}`,
+        transition: 'all 0.2s ease-out'
+      }
     },
     main: {
       py: 9,

@@ -16,36 +16,30 @@ const Nav = () => {
         }}
       >
         <Flex
+          variant="layout.nav.inner"
           sx={{
-            width: '100%',
-            maxWidth: 'container',
-            margin: '0 auto',
             justifyContent: 'space-between',
-            borderBottomWidth: '1px',
-            borderBottomStyle: 'solid',
-            borderBottomColor: 'border.default',
-            pb: '24px',
-            transition: 'all 0.2s ease-out'
           }}
         >
           {/* Logo */}
-          <Box
+          <Flex
             sx={{
-              maxHeight: '40px',
-              width: 'auto'
+              width: 'auto',
+              alignItems: 'center'
             }}
           >
             <Link href="/" passHref>
               <Themed.a 
                 aria-label="Go to Mike Tang's home page"
                 sx={{ 
-                  variant: 'links.logo' 
+                  variant: 'links.logo',
+                  maxHeight: '32px'
                 }}
               >
                 <Logo />
               </Themed.a>
             </Link>
-          </Box>
+          </Flex>
 
           {/* Theme selector */}
           <ThemeSelector />
