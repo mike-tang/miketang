@@ -24,7 +24,8 @@ const Nav = () => {
             borderBottomWidth: '1px',
             borderBottomStyle: 'solid',
             borderBottomColor: 'border.default',
-            pb: '24px'
+            pb: '24px',
+            transition: 'all 0.2s ease-out'
           }}
         >
           {/* Logo */}
