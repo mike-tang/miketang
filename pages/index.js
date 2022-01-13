@@ -17,12 +17,7 @@ const Home = () => {
           margin: '0 auto'
         }}
       >
-        <Box
-          as="section"
-          sx={{
-            pb: 8
-          }}
-        >
+        <Box as="section">
           <Themed.h1
             sx={{
               lineHeight: 'heading',
@@ -37,10 +32,10 @@ const Home = () => {
           <Themed.p 
             sx={{
               fontSize: 3,
+              color: 'foreground.secondary',
               lineHeight: 'body',
               textAlign: 'left',
-              fontWeight: 'body',
-              pb: 6
+              fontWeight: 'body'
             }}
           >
             {`Designing for scale and impact. Building efficient software and digital experiences. Working on `}
