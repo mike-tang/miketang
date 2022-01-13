@@ -117,12 +117,13 @@ export default {
     nav: {
       display: 'flex',
       px: 4,
-      my: [6, 6, 8],
+      pt: 4,
       alignItems: 'center',
       color: 'foreground.primary',
       zIndex: 100
     },
     main: {
+      py: 8,
       color: 'foreground.primary',
       transition: 'background-color 0.2s ease-out, color 0.2s ease-out',
     },

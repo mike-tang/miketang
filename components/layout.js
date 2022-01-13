@@ -11,7 +11,9 @@ const Layout = ({ children }) => {
         sx={{
           flexDirection: 'column',
           minHeight: '100vh',
-          variant: 'styles.root'
+          variant: 'styles.root',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}
       >
         <Nav />
@@ -19,7 +21,7 @@ const Layout = ({ children }) => {
           as="main"
           sx={{
             width: '100%',
-            flex: '1 1 auto',
+            flex: '0 0 auto',
             variant: 'layout.main',
           }}
         >
