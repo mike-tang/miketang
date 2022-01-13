@@ -123,17 +123,25 @@ export default {
       zIndex: 100
     },
     main: {
-      py: 8,
+      py: 9,
       color: 'foreground.primary',
       transition: 'background-color 0.2s ease-out, color 0.2s ease-out',
     },
     footer: {
       px: 3,
-      py: 6,
+      pb: 4,
       backgroundColor: 'background.primary',
       color: 'foreground.primary',
-      boxShadow: theme => `inset 0px 1px 0px ${theme.colors.border.default}`,
-      transition: 'background-color 0.2s ease-out, box-shadow 0.2s ease-out',
+      // boxShadow: theme => `inset 0px 1px 0px ${theme.colors.border.default}`,
+      transition: 'background-color 0.2s ease-out',
+      inner: {
+        width: '100%',
+        maxWidth: 'container',
+        margin: '0 auto',
+        pt: '24px',
+        boxShadow: theme => `inset 0px 1px 0px ${theme.colors.border.default}`,
+        transition: 'all 0.2s ease-out'
+      }
     }
   },
   borderWidths: {
