@@ -299,30 +299,47 @@ export default {
   },
   links: {
     text: {
-      color: 'foreground.primary',
+      color: 'foreground.secondary',
       fontWeight: 'bold',
-      backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
-      backgroundSize: '100% 1px',
-      backgroundPosition: '0 100%',
-      backgroundRepeat: 'no-repeat',
       maxWidth: 'fit-content',
       transition: 'all 0.2s ease-out',
       ':hover': {
-        color: 'foreground.secondary',
+        color: 'foreground.primary',
         textDecoration: 'none',
-        backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
         transition: 'all 0.2s ease-out',
       },
       ':focus': {
-        color: 'foreground.secondary',
+        color: 'foreground.primary',
         textDecoration: 'none',
-        backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
         transition: 'all 0.2s ease-out',
       },
       '::selection': {
         textShadow: 'none',
         backgroundColor: 'foreground.primary',
         color: 'background.primary'
+      },
+      underlined: {
+        backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
+        backgroundSize: '100% 1px',
+        backgroundPosition: '0 100%',
+        backgroundRepeat: 'no-repeat',
+        ':hover': {
+          color: 'foreground.primary',
+          textDecoration: 'none',
+          backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.primary}, ${theme.colors.foreground.primary})`,
+          transition: 'all 0.2s ease-out',
+        },
+        ':focus': {
+          color: 'foreground.primary',
+          textDecoration: 'none',
+          backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.primary}, ${theme.colors.foreground.primary})`,
+          transition: 'all 0.2s ease-out',
+        },
+        '::selection': {
+          textShadow: 'none',
+          backgroundColor: 'foreground.primary',
+          color: 'background.primary'
+        },
       },
     },
     logo: {
