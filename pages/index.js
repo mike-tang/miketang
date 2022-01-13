@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Themed, Flex, Box } from 'theme-ui'
-import SocialLinks from '@/components/links-social'
+import TextLink from '@/components/link-text'
 
 const Home = () => {
   return (
@@ -38,17 +38,14 @@ const Home = () => {
               fontWeight: 'body'
             }}
           >
-            {`Designing for scale and impact. Building efficient software and digital experiences. Working on `}
-            <Themed.a
-              href="https://ko.education"
-              target="_blank"
-              rel="noopener noreferrer"
+            {`Designing systems and interfaces. Developing performant software and digital services. Building `}
+            <TextLink 
+              text="Ko"
+              url="https://ko.education"
               sx={{
-                variant: 'links.text'
+                variant: 'links.text.underlined'
               }}
-            >
-              Ko
-            </Themed.a> 
+            />
             {` to support the education economy.`}
           </Themed.p>
 
