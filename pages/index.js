@@ -57,9 +57,6 @@ const Home = () => {
             {` to support the education economy.`}
           </Themed.p>
 
-          {/* Social links */}
-          <SocialLinks />
-
         </Box>
       </Box>
     </Flex>

@@ -2,6 +2,7 @@
 import { Themed, Flex } from 'theme-ui'
 import Head from '@/components/head'
 import Nav from '@/components/nav'
+import Footer from '@/components/footer'
 
 const Layout = ({ children }) => {
   return (
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
         >
           {children}
         </Themed.div>
+        <Footer />
       </Flex>
     </>
   )
