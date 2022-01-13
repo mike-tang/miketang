@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
-import { Themed, Select, useColorMode } from 'theme-ui'
+import { Themed, Button, useColorMode } from 'theme-ui'
+import { FiSun, FiMoon } from 'react-icons/fi'
 
 const ThemeSelector = () => {
   const [colorMode, setColorMode] = useColorMode()
@@ -8,22 +9,26 @@ const ThemeSelector = () => {
     <Themed.div
       sx={{
         display: 'block',
-        flex: '2 0 auto',
         maxWidth: '80px'
       }}
     >
-      <Select
-        name="theme"
-        id="theme"
-        aria-label="Theme"
-        value={colorMode}
-        onChange={(e) => {
-          setColorMode(e.target.value)
+      <Button
+        variant="iconOutline"
+        onClick={() => {
+          setColorMode(colorMode === 'dark' ? 'light' : 'dark')
+        }}
+        onMouseUp={() => {
+          // Blur the focus after button is clicked
+          document.activeElement.blur()
         }}
       >
-        <option value="dark">Dark</option>
-        <option value="light">Light</option>
-      </Select>
+        {colorMode === 'dark' && 
+          <FiMoon size={'24px'} />
+        }
+        {colorMode === 'light' && 
+          <FiSun size={'24px'} />
+        }
+      </Button>
     </Themed.div>
   )
 }
