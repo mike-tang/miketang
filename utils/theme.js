@@ -358,6 +358,47 @@ export default {
         transition: 'all 0.2s ease-out',
       },
     },
+    iconOutline: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontFamily: 'body',
+      height: '40px',
+      width: '40px',
+      p: 0,
+      fontSize: 0,
+      fontWeight: 'bold',
+      color: 'foreground.primary',
+      bg: 'transparent',
+      borderStyle: 'outline',
+      borderWidth: 'outline',
+      borderColor: 'border.default',
+      borderRadius: 'round',
+      cursor: 'pointer',
+      transition: 'all 0.2s ease-out',
+      '&:hover': {
+        color: 'foreground.primary',
+        borderColor: 'foreground.primary',
+        bg: 'transparent',
+        transition: 'all 0.2s ease-out',
+      },
+      '&:focus': {
+        color: 'foreground.primary',
+        borderColor: 'foreground.secondary',
+        bg: 'transparent',
+        transition: 'all 0.2s ease-out',
+      },
+      '&:disabled': {
+        color: 'accent.2',
+        borderColor: 'accent.2',
+        bg: 'transparent',
+        transition: 'all 0.2s ease-out',
+        cursor: 'not-allowed',
+      },
+      '>svg': {
+        mr: 0,
+      },
+    }
   },
   forms: {
     select: {
