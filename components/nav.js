@@ -20,25 +20,33 @@ const Nav = () => {
             width: '100%',
             maxWidth: 'container',
             margin: '0 auto',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            borderBottomWidth: '1px',
+            borderBottomStyle: 'solid',
+            borderBottomColor: 'border.default',
+            paddingBottom: '24px'
           }}
         >
-          <Link href="/" passHref>
-            <Themed.a 
-              aria-label="Go to Mike Tang's home page"
-              sx={{ 
-                variant: 'links.logo' 
-              }}
-            >
-              <Box 
-                sx={{
-                  maxWidth: '64px',
+          {/* Logo */}
+          <Box
+            sx={{
+              maxHeight: '40px',
+              width: 'auto'
+            }}
+          >
+            <Link href="/" passHref>
+              <Themed.a 
+                aria-label="Go to Mike Tang's home page"
+                sx={{ 
+                  variant: 'links.logo' 
                 }}
               >
                 <Logo />
-              </Box>
-            </Themed.a>
-          </Link>
+              </Themed.a>
+            </Link>
+          </Box>
+
+          {/* Theme selector */}
           <ThemeSelector />
         </Flex>
       </Flex>

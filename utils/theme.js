@@ -325,6 +325,8 @@ export default {
       },
     },
     logo: {
+      width: 'auto',
+      height: '100%',
       display: 'inline-flex',
       lineHeight: 0,
       color: 'foreground.primary',
