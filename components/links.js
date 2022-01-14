@@ -1,9 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Themed, Flex, Box, Text } from 'theme-ui'
-
-// import { keyframes } from '@emotion/react'
-
-// const fadeIn = keyframes({ from: { opacity: 0 }, to: { opacity: 1 } })
+import { Themed, Flex, Text } from 'theme-ui'
 
 const TextLink = ({text, url, ...props}) => {
   return (
