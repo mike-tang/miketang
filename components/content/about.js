@@ -41,7 +41,8 @@ const About = () => {
             text="Ko"
             url="https://ko.education"
             sx={{
-              variant: 'links.text.underlined'
+              variant: 'links.text',
+              color: '#7755FF'
             }}
           />
           {` to support the education economy.`}
