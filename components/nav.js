@@ -10,10 +10,7 @@ const Nav = () => {
     <>
       <Flex 
         as="nav" 
-        sx={{
-          width: '100%',
-          variant: 'layout.nav',
-        }}
+        variant="layout.nav"
       >
         <Flex
           variant="layout.nav.inner"
