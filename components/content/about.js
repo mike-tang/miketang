@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Themed, Flex, Box } from 'theme-ui'
-import TextLink from '@/components/link-text'
+import { TextLink } from '@/components/links'
 
 const About = () => {
   return (
