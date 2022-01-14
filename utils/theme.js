@@ -137,6 +137,7 @@ export default {
       inner: {
         width: '100%',
         maxWidth: 'container',
+        justifyContent: 'space-between',
         mx: 3,
         my: 0,
         px: 0,

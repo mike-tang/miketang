@@ -14,9 +14,6 @@ const Nav = () => {
       >
         <Flex
           variant="layout.nav.inner"
-          sx={{
-            justifyContent: 'space-between',
-          }}
         >
           {/* Logo */}
           <Flex
