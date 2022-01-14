@@ -132,6 +132,7 @@ export default {
       left: [0, 'auto', 'auto'],
       backgroundColor: 'background.primaryTransparent',
       backdropFilter: 'blur(4px)',
+      transition: 'all 0.2s ease-out',
       inner: {
         width: '100%',
         maxWidth: 'container',
