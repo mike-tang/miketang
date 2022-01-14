@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Themed, Flex } from 'theme-ui'
+import { Flex } from 'theme-ui'
 import Head from '@/components/head'
 import Nav from '@/components/nav'
 import Footer from '@/components/footer'

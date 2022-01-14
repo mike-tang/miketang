@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import Link from 'next/link'
-import { Themed, Flex, Box } from 'theme-ui'
+import { Themed, Flex } from 'theme-ui'
 import Logo from '@/components/logo'
 import ThemeSelector from '@/components/theme-selector'
 
