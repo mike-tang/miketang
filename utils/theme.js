@@ -127,14 +127,10 @@ export default {
       justifyContent: 'center',
       color: 'foreground.primary',
       zIndex: 100,
-      boxShadow: theme => [
-        `inset 0px -1px 0px ${theme.colors.border.default}`, 
-        'none', 
-        'none'
-      ],
-      position: ['fixed', 'relative', 'relative'],
-      top: [0, 'auto', 'auto'],
-      left: [0, 'auto', 'auto'],
+      boxShadow: theme => `inset 0px -1px 0px ${theme.colors.border.default}`,
+      position: 'fixed',
+      top: 0,
+      left: 0,
       backgroundColor: 'background.primaryTransparent',
       backdropFilter: 'blur(4px)',
       transition: 'all 0.2s ease-out',
@@ -146,11 +142,6 @@ export default {
         my: 0,
         px: 0,
         py: 4,
-        boxShadow: theme => [
-          'none', 
-          `inset 0px -1px 0px ${theme.colors.border.default}`, 
-          `inset 0px -1px 0px ${theme.colors.border.default}`
-        ],
         transition: 'all 0.2s ease-out'
       }
     },
@@ -160,7 +151,7 @@ export default {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      mt: theme => [theme.sizes.nav, 0, 0],
+      mt: theme => theme.sizes.nav,
       color: 'foreground.primary',
     },
     section: {
