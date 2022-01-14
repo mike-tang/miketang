@@ -24,7 +24,7 @@ const Home = () => {
               textAlign: 'left',
               fontWeight: 'heading',
               pb: 4,
-              letterSpacing: '-4px'
+              letterSpacing: ['-2px', '-3px', '-4px']
             }}
           >
             Mike Tang
