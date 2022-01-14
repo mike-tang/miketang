@@ -172,7 +172,7 @@ export default {
         maxWidth: ['none', 'container'],
         flexDirection: 'column',
         px: [4, 0],
-        py: 4,
+        py: 6,
         boxShadow: theme => [
           'none', 
           `inset 0px -1px 0px ${theme.colors.border.default}`, 
