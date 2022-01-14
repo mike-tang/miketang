@@ -151,6 +151,7 @@ export default {
     main: {
       width: '100%',
       flex: '0 0 auto',
+      flexDirection: 'column',
       mt: theme => [theme.sizes.nav, 0, 0],
       color: 'foreground.primary',
       alignItems: 'center',
