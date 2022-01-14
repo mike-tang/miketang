@@ -18,16 +18,12 @@ const Layout = ({ children }) => {
         }}
       >
         <Nav />
-        <Themed.div 
+        <Flex
           as="main"
-          sx={{
-            width: '100%',
-            flex: '0 0 auto',
-            variant: 'layout.main',
-          }}
+          variant="layout.main"
         >
           {children}
-        </Themed.div>
+        </Flex>
         <Footer />
       </Flex>
     </>

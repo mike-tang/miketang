@@ -8,7 +8,7 @@ export default {
 
   breakpoints: ['40em', '52em', '64em'],
   sizes: {
-    nav: '64px',
+    nav: '72px',
     container: 640,
     button: '40px',
     input: '40px',
@@ -149,9 +149,21 @@ export default {
       }
     },
     main: {
-      py: 9,
+      width: '100%',
+      flex: '0 0 auto',
+      mt: theme => [theme.sizes.nav, 0, 0],
       color: 'foreground.primary',
-      transition: 'background-color 0.2s ease-out, color 0.2s ease-out',
+      alignItems: 'center',
+      justifyContent: 'center',
+      transition: 'all 0.2s ease-out',
+      section: {
+        width: '100%',
+        flexDirection: 'column',
+        maxWidth: 'container',
+        mx: 3,
+        my: 0,
+        transition: 'all 0.2s ease-out',
+      }
     },
     footer: {
       px: 3,
