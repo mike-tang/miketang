@@ -142,10 +142,10 @@ export default {
         width: '100%',
         maxWidth: 'container',
         justifyContent: 'space-between',
-        mx: 3,
+        mx: 4,
         my: 0,
         px: 0,
-        py: 3,
+        py: 4,
         boxShadow: theme => [
           'none', 
           `inset 0px -1px 0px ${theme.colors.border.default}`, 
@@ -156,20 +156,34 @@ export default {
     },
     main: {
       width: '100%',
-      flex: '0 0 auto',
+      display: 'flex',
       flexDirection: 'column',
-      mt: theme => [theme.sizes.nav, 0, 0],
-      color: 'foreground.primary',
       alignItems: 'center',
       justifyContent: 'center',
-      transition: 'all 0.2s ease-out',
-      section: {
+      mt: theme => [theme.sizes.nav, 0, 0],
+      color: 'foreground.primary',
+    },
+    section: {
+      width: '100%',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      boxShadow: theme => [
+        `inset 0px -1px 0px ${theme.colors.border.default}`, 
+        'none'
+      ],
+      transition: 'box-shadow 0.2s ease-out',
+      inner: {
         width: '100%',
+        maxWidth: ['none', 'container'],
         flexDirection: 'column',
-        maxWidth: 'container',
-        mx: 3,
-        my: 0,
-        transition: 'all 0.2s ease-out',
+        px: [4, 0],
+        py: 4,
+        boxShadow: theme => [
+          'none', 
+          `inset 0px -1px 0px ${theme.colors.border.default}`, 
+        ],
+        transition: 'box-shadow 0.2s ease-out'
       }
     },
     footer: {
