@@ -1,15 +1,14 @@
 /** @jsxImportSource theme-ui */
-import { Themed, Button, useColorMode } from 'theme-ui'
+import { Flex, Button, useColorMode } from 'theme-ui'
 import { FiSun, FiMoon } from 'react-icons/fi'
 
 const ThemeSelector = () => {
   const [colorMode, setColorMode] = useColorMode()
 
   return (
-    <Themed.div
+    <Flex
       sx={{
-        display: 'block',
-        maxWidth: '80px'
+        flex: '0 0 auto'
       }}
     >
       <Button
@@ -29,7 +28,7 @@ const ThemeSelector = () => {
           <FiSun size={'24px'} />
         }
       </Button>
-    </Themed.div>
+    </Flex>
   )
 }
 

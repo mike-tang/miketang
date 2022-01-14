@@ -24,8 +24,8 @@ const Nav = () => {
           {/* Logo */}
           <Flex
             sx={{
-              width: 'auto',
-              alignItems: 'center'
+              alignItems: 'center',
+              flex: '0 1 auto'
             }}
           >
             <Link href="/" passHref>
@@ -33,7 +33,7 @@ const Nav = () => {
                 aria-label="Go to Mike Tang's home page"
                 sx={{ 
                   variant: 'links.logo',
-                  maxHeight: '32px'
+                  maxHeight: ['24px', '32px', '32px']
                 }}
               >
                 <Logo />

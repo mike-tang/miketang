@@ -13,8 +13,8 @@ const Layout = ({ children }) => {
           flexDirection: 'column',
           minHeight: '100vh',
           variant: 'styles.root',
-          alignItems: 'center',
-          justifyContent: 'center'
+          alignItems: ['center', 'center', 'center'],
+          justifyContent: ['flex-start', 'center', 'center']
         }}
       >
         <Nav />

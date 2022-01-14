@@ -117,14 +117,26 @@ export default {
     nav: {
       display: 'flex',
       alignItems: 'center',
+      justifyContent: 'center',
       color: 'foreground.primary',
       zIndex: 100,
+      boxShadow: theme => [
+        `inset 0px -1px 0px ${theme.colors.border.default}`, 
+        'none', 
+        'none'
+      ],
       inner: {
         width: '100%',
         maxWidth: 'container',
-        margin: '0 auto',
-        py: '24px',
-        boxShadow: theme => `inset 0px -1px 0px ${theme.colors.border.default}`,
+        mx: 3,
+        my: 0,
+        px: 0,
+        py: 3,
+        boxShadow: theme => [
+          'none', 
+          `inset 0px -1px 0px ${theme.colors.border.default}`, 
+          `inset 0px -1px 0px ${theme.colors.border.default}`
+        ],
         transition: 'all 0.2s ease-out'
       }
     },
