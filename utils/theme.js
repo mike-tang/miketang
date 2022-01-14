@@ -216,6 +216,13 @@ export default {
     empty: 'dashed'
   },
   text: {
+    default: {
+      '::selection': {
+        textShadow: 'none',
+        backgroundColor: 'foreground.primary',
+        color: 'background.primary'
+      },
+    },
     heading: {
       fontFamily: 'heading',
       lineHeight: 'heading',
