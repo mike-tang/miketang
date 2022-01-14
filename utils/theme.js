@@ -53,7 +53,8 @@ export default {
     text: '#DDD',
     background: {
       primary: '#111111',
-      secondary: '#222222'
+      secondary: '#222222',
+      primaryTransparent: 'rgba(17, 17, 17, 0.64)'
     },
     foreground: {
       primary: '#DDD',
@@ -89,7 +90,8 @@ export default {
         text: '#444',
         background: {
           primary: '#F8F8F8',
-          secondary: '#EEEEEE'
+          secondary: '#EEEEEE',
+          primaryTransparent: 'rgba(255, 255, 255, 0.64)'
         },
         foreground: {
           primary: '#444',
@@ -125,6 +127,11 @@ export default {
         'none', 
         'none'
       ],
+      position: ['fixed', 'relative', 'relative'],
+      top: [0, 'auto', 'auto'],
+      left: [0, 'auto', 'auto'],
+      backgroundColor: 'background.primaryTransparent',
+      backdropFilter: 'blur(4px)',
       inner: {
         width: '100%',
         maxWidth: 'container',
