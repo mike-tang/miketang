@@ -6,7 +6,11 @@ export default {
   useColorSchemeMediaQuery: 'system', // Initializes the color mode based on the prefers-color-scheme media query
   useBorderBox: 'true', // Adds a global box-sizing: border-box style
 
-  breakpoints: ['40em', '52em', '64em'],
+  breakpoints: [
+    '688px',
+    '832px',
+    '1024px'
+  ],
   sizes: {
     nav: '72px',
     container: 640,
