@@ -11,7 +11,9 @@ const About = () => {
       <Flex
         variant="layout.section.inner"
         sx={{
-          py: [9, 9, 9]
+          py: [9, 9, 9],
+          minHeight: '64vh',
+          justifyContent: 'center'
         }}
       >
         <Themed.h1
