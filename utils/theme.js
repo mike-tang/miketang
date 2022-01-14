@@ -173,6 +173,9 @@ export default {
         'none'
       ],
       transition: 'box-shadow 0.2s ease-out',
+      ':last-of-type > div': {
+        boxShadow: 'none',
+      },
       inner: {
         width: '100%',
         maxWidth: ['none', 'container'],
