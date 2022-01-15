@@ -152,6 +152,7 @@ export default {
       alignItems: 'center',
       justifyContent: 'center',
       mt: theme => theme.sizes.nav,
+      mb: 9,
       color: 'foreground.primary',
     },
     section: {
