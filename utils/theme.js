@@ -165,6 +165,9 @@ export default {
         'none'
       ],
       transition: 'box-shadow 0.2s ease-out',
+      ':last-of-type': {
+        boxShadow: 'none',
+      },
       ':last-of-type > div': {
         boxShadow: 'none',
       },
