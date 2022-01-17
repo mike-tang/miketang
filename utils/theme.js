@@ -434,7 +434,7 @@ export default {
       fontFamily: 'body',
       height: '40px',
       width: '40px',
-      p: 0,
+      p: 2,
       fontSize: 0,
       fontWeight: 'bold',
       color: 'foreground.primary',
