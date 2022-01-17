@@ -30,27 +30,27 @@ const AudioAnimation = ({alt, ...props}) => {
 
       <rect x="0.5" y="6" width="1" height="4" rx="0.5" fill="currentColor" 
         sx={{ 
-          animation: `${pulse} 1.0s 0.16s linear infinite`
+          animation: `${pulse} 1.2s 0.16s linear infinite`
         }}
       />
       <rect x="4.5" y="4" width="1" height="8" rx="0.5" fill="currentColor" 
         sx={{ 
-          animation: `${pulse} 1.0s 0.32s linear infinite`
+          animation: `${pulse} 1.2s 0.32s linear infinite`
         }}
       />
       <rect x="8.5" width="1" height="16" rx="0.5" fill="currentColor" 
         sx={{ 
-          animation: `${pulse} 1.0s 0.48s linear infinite`
+          animation: `${pulse} 1.2s 0.48s linear infinite`
         }}
       />
       <rect x="12.5" y="4" width="1" height="8" rx="0.5" fill="currentColor" 
         sx={{ 
-          animation: `${pulse} 1.0s 0.64s linear infinite`
+          animation: `${pulse} 1.2s 0.64s linear infinite`
         }}
       />
       <rect x="16.5" y="6" width="1" height="4" rx="0.5" fill="currentColor" 
         sx={{ 
-          animation: `${pulse} 1.0s 0.72s linear infinite`
+          animation: `${pulse} 1.2s 0.72s linear infinite`
         }}
       />
     </svg>
