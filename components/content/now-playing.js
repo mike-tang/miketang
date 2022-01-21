@@ -48,7 +48,6 @@ const NowPlaying = () => {
               Now playing
             </Text>
 
-
             {/* Widget */}
             <Flex
               sx={{
@@ -68,7 +67,6 @@ const NowPlaying = () => {
       }
 
     </>
-
   )
 }
 
