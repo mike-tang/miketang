@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Flex } from 'theme-ui'
+import { Flex, Text } from 'theme-ui'
 import { BsTwitter, BsGithub } from 'react-icons/bs'
 import { GrLinkedinOption } from 'react-icons/gr'
 import { ListItemLink } from '@/components/links'

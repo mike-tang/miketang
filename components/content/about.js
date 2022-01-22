@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Flex } from 'theme-ui'
+import { Themed, Flex } from 'theme-ui'
 import { TextLink } from '@/components/links'
 import { InView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
