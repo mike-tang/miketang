@@ -32,6 +32,7 @@ const NowPlaying = () => {
   const item = {
     hidden: { 
       opacity: 0,
+      y: 24,
       transition: {
         duration: 0.5, 
         ease: "linear"
@@ -39,6 +40,7 @@ const NowPlaying = () => {
     },
     visible: { 
       opacity: 1,
+      y: 0,
       transition: {
         duration: 0.5, 
         ease: "linear"
