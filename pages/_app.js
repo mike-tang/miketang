@@ -1,3 +1,4 @@
+import '../styles/global.css'
 import React, { useEffect } from 'react'
 import { ThemeProvider } from 'theme-ui'
 import theme from '../utils/theme'

@@ -13,14 +13,20 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Google Font Preconnect: https://nextjs.org/docs/messages/google-font-preconnect */}
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-          
-          {/* Automatic Webfont Optimization: https://nextjs.org/docs/basic-features/font-optimization */}
-          <link 
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=optional" 
-            rel="stylesheet" 
+          {/* Preload self-hosted fonts */}
+          <link
+            rel="preload"
+            href="/fonts/Inter-Bold.woff2?v=3.19"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Inter-Regular.woff2?v=3.19"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
           />
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
