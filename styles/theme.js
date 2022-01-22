@@ -1,5 +1,5 @@
 export default {
-  // Configuration flags
+  // Configuration flags: https://theme-ui.com/theming#configuration-flags
   config: {
     useCustomProperties: true, // Enables CSS custom properties to help mitigate a flash of unstyled content during rehydration
     useRootStyles: true, // Adds styles defined in theme.styles.root to the <body> element along with color and background-color
