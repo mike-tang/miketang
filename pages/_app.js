@@ -1,7 +1,7 @@
 import '@/styles/global.css'
 import React, { useEffect } from 'react'
 import { ThemeProvider } from 'theme-ui'
-import theme from '@/utils/theme'
+import theme from '@/styles/theme'
 import Layout from '@/components/layout'
 import { useRouter } from 'next/router'
 import * as gtag from '@/utils/gtag'
