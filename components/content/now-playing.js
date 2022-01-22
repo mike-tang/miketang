@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Flex, Text } from 'theme-ui'
+import { Flex } from 'theme-ui'
 import { AudioAnimation } from '@/components/animation-audio'
 import useSWR from 'swr'
 import { useState, useEffect } from 'react'
