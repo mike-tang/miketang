@@ -156,6 +156,7 @@ export default {
       color: 'foreground.primary',
     },
     section: {
+      display: 'flex',
       width: '100%',
       alignItems: 'center',
       justifyContent: 'center',
@@ -172,6 +173,7 @@ export default {
         boxShadow: 'none',
       },
       inner: {
+        display: 'flex',
         width: '100%',
         maxWidth: ['none', 'container'],
         flexDirection: 'column',
