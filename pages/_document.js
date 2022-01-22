@@ -19,7 +19,7 @@ class MyDocument extends Document {
           
           {/* Automatic Webfont Optimization: https://nextjs.org/docs/basic-features/font-optimization */}
           <link 
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" 
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=optional" 
             rel="stylesheet" 
           />
 
