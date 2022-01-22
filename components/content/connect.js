@@ -14,11 +14,11 @@ const Connect = () => {
     },
     visible: {
       opacity: 1,
-      // transition: {
-      //   delay: 1.0,
-      //   delayChildren: 1.0,
-      //   staggerChildren: 0.2
-      // }
+      transition: {
+        delay: 1.0,
+        delayChildren: 1.0,
+        staggerChildren: 0.2
+      }
     }
   }
 
