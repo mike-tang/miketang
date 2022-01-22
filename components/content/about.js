@@ -63,40 +63,40 @@ const About = () => {
                 }}
               >
                 <motion.h1
-                  variants={item}
+                variants={item}
+                sx={{
+                  variant: 'styles.h1',
+                  lineHeight: 'heading',
+                  textAlign: 'left',
+                  fontWeight: 'heading',
+                  pb: 4,
+                  letterSpacing: ['-2px', '-3px', '-4px']
+                }}
+              >
+                Mike Tang
+              </motion.h1>
+              <motion.p 
+                variants={item}
+                sx={{
+                  variant: 'styles.p',
+                  fontSize: 3,
+                  color: 'foreground.secondary',
+                  lineHeight: 'body',
+                  textAlign: 'left',
+                  fontWeight: 'body'
+                }}
+              >
+                {`Designing systems and interfaces. Developing performant software and digital services. Building `}
+                <TextLink
+                  text="Ko"
+                  url="https://ko.education"
                   sx={{
-                    variant: 'styles.h1',
-                    lineHeight: 'heading',
-                    textAlign: 'left',
-                    fontWeight: 'heading',
-                    pb: 4,
-                    letterSpacing: ['-2px', '-3px', '-4px']
+                    variant: 'links.text',
+                    color: '#7755FF'
                   }}
-                >
-                  Mike Tang
-                </motion.h1>
-                <motion.p 
-                  variants={item}
-                  sx={{
-                    variant: 'styles.p',
-                    fontSize: 3,
-                    color: 'foreground.secondary',
-                    lineHeight: 'body',
-                    textAlign: 'left',
-                    fontWeight: 'body'
-                  }}
-                >
-                  {`Designing systems and interfaces. Developing performant software and digital services. Building `}
-                  <TextLink
-                    text="Ko"
-                    url="https://ko.education"
-                    sx={{
-                      variant: 'links.text',
-                      color: '#7755FF'
-                    }}
-                  />
-                  {` to support the education economy.`}
-                </motion.p>
+                />
+                {` to support the education economy.`}
+              </motion.p>
               </Flex>
             </motion.section>
           </>
