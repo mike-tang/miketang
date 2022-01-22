@@ -1,10 +1,10 @@
-import '../styles/global.css'
+import '@/styles/global.css'
 import React, { useEffect } from 'react'
 import { ThemeProvider } from 'theme-ui'
-import theme from '../utils/theme'
-import Layout from '../components/layout'
+import theme from '@/utils/theme'
+import Layout from '@/components/layout'
 import { useRouter } from 'next/router'
-import * as gtag from '../utils/gtag'
+import * as gtag from '@/utils/gtag'
 
 const App = ({ Component, pageProps }) => {
   
