@@ -1,11 +1,12 @@
 export default {
   // Configuration flags
-  useCustomProperties: true, // Enables CSS custom properties to help mitigate a flash of unstyled content during rehydration
-  useBodyStyles: true, // Adds styles defined in theme.styles.root to the <body> element along with color and background-color
-  initialColorModeName: 'dark', // The key used for the top-level color palette in theme.colors
-  useColorSchemeMediaQuery: 'system', // Initializes the color mode based on the prefers-color-scheme media query
-  useBorderBox: 'true', // Adds a global box-sizing: border-box style
-
+  config: {
+    useCustomProperties: true, // Enables CSS custom properties to help mitigate a flash of unstyled content during rehydration
+    useRootStyles: true, // Adds styles defined in theme.styles.root to the <body> element along with color and background-color
+    initialColorModeName: 'dark', // The key used for the top-level color palette in theme.colors
+    useColorSchemeMediaQuery: 'system', // Initializes the color mode based on the prefers-color-scheme media query
+    useBorderBox: 'true', // Adds a global box-sizing: border-box style
+  },
   breakpoints: [
     '688px',
     '832px',
