@@ -434,6 +434,7 @@ export default {
     },
     iconOutline: {
       display: 'flex',
+      flex: '0 0 auto',
       alignItems: 'center',
       justifyContent: 'center',
       fontFamily: 'body',
@@ -503,6 +504,7 @@ export default {
   buttons: {
     iconOutline: {
       display: 'flex',
+      flex: '0 0 auto',
       alignItems: 'center',
       justifyContent: 'center',
       fontFamily: 'body',

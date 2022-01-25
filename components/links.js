@@ -67,10 +67,14 @@ const ListItemLink = ({icon, textPrimary, textSecondary, url, ...props}) => {
         >
           <Text
             sx={{
+              width: '100%',
               fontSize: 2,
               lineHeight: '16px',
               fontWeight: 'bold',
-              pb: 2
+              pb: 2,
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
             }}
           >
             {textPrimary}
@@ -78,9 +82,13 @@ const ListItemLink = ({icon, textPrimary, textSecondary, url, ...props}) => {
           
           <Text
             sx={{
+              width: '100%',
               fontSize: 1,
               lineHeight: '16px',
-              color: 'foreground.secondary'
+              color: 'foreground.secondary',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
             }}
           >
             {textSecondary}
