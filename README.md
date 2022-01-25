@@ -1,4 +1,4 @@
-# [miketang.co](https://miketang.co)
+# [tang.is](https://tang.is)
 
 My personal website.
 
