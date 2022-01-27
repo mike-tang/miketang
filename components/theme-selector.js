@@ -12,6 +12,7 @@ const ThemeSelector = () => {
       }}
     >
       <Button
+        aria-label='Switch theme'
         variant="iconOutline"
         onClick={() => {
           setColorMode(colorMode === 'dark' ? 'light' : 'dark')
