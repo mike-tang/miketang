@@ -834,7 +834,7 @@ swr@^1.2.0:
   resolved "https://registry.yarnpkg.com/swr/-/swr-1.2.0.tgz#8649f6e9131ce94bbcf7ffd65c21334da3d1ec20"
   integrity sha512-C3IXeKOREn0jQ1ewXRENE7ED7jjGbFTakwB64eLACkCqkF/A0N2ckvpCTftcaSYi5yV36PzoehgVCOVRmtECcA==
 
-theme-ui@0.13.1:
+theme-ui@^0.13.1:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.13.1.tgz#33845b52ab97822617a33de59c3e3267dc00398a"
   integrity sha512-9GGY68GUEHZSwmaCHJ75c2vl0oe90JLarMJgKh59pu38nzc15Ubqg5QqEqp0lLGubKBe4EQZtriatO+V7734SA==
