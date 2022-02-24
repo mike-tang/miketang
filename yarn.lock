@@ -515,10 +515,10 @@ find-root@^1.1.0:
   resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
   integrity sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==
 
-framer-motion@^6.2.7:
-  version "6.2.7"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.2.7.tgz#14e71ca933b63dc85327b3ea9ba2f1564f116dd3"
-  integrity sha512-RExmZCFpJ3OCakoXmZz8iW8ZI5MoaHmVadydetvTSrNaKmZ7ZC/JDQpNyw1NoDG+fchRGP86lXoiTFSQuin+Cg==
+framer-motion@^6.2.8:
+  version "6.2.8"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.2.8.tgz#02abb529191af7e2df444185fe27e932215b715d"
+  integrity sha512-4PtBWFJ6NqR350zYVt9AsFDtISTqsdqna79FvSYPfYDXuuqFmiKtZdkTnYPslnsOMedTW0pEvaQ7eqjD+sA+HA==
   dependencies:
     framesync "6.0.1"
     hey-listen "^1.0.8"
