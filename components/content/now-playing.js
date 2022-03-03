@@ -60,8 +60,8 @@ const NowPlaying = () => {
                 url={data.songUrl}
                 textPrimary={data.title}
                 textSecondary={
-                  data.type === 'show' 
-                    ? `${data.showName} ・ ${data.showPublisher}`
+                  data.type === 'episode' 
+                    ? `${data.showName}`
                     : data.artist
                 }
               />

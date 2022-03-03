@@ -17,15 +17,15 @@ const handler = async (req, res) => {
     })
   }
 
+  console.log('Track:', track)
+
   const isPlaying = track.is_playing
-  const type = track.context.type // show, playlist, artist
+  const type = track.item.type // episode, track
   const title = track.item.name
   const artist = track.item.artists?.map((_artist) => _artist.name).join(', ')
   const showName = track.item.show?.name
-  const showPublisher = track.item.show?.publisher
   const imageUrl = track.item.album?.images[0].url
   const trackUrl = track.item.external_urls.spotify
-  const playlistUrl = track.context.external_urls.spotify
 
   res.setHeader(
     'Cache-Control',
@@ -38,10 +38,8 @@ const handler = async (req, res) => {
     title,
     artist,
     showName,
-    showPublisher,
     imageUrl,
-    trackUrl,
-    playlistUrl
+    trackUrl
   })
 }
 
