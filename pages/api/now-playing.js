@@ -18,10 +18,12 @@ const handler = async (req, res) => {
   }
 
   const isPlaying = track.is_playing
+  const type = track.context.type // show, playlist, artist
   const title = track.item.name
-  const artist = track.item.artists.map((_artist) => _artist.name).join(', ')
-  const album = track.item.album.name
-  const albumImageUrl = track.item.album.images[0].url
+  const artist = track.item.artists?.map((_artist) => _artist.name).join(', ')
+  const showName = track.item.show?.name
+  const showPublisher = track.item.show?.publisher
+  const imageUrl = track.item.album?.images[0].url
   const trackUrl = track.item.external_urls.spotify
   const playlistUrl = track.context.external_urls.spotify
 
@@ -31,12 +33,14 @@ const handler = async (req, res) => {
   )
 
   return res.status(200).json({
-    album,
-    albumImageUrl,
-    artist,
     isPlaying,
-    trackUrl,
+    type,
     title,
+    artist,
+    showName,
+    showPublisher,
+    imageUrl,
+    trackUrl,
     playlistUrl
   })
 }

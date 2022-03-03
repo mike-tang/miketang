@@ -59,7 +59,11 @@ const NowPlaying = () => {
                 icon={<AudioAnimation />}
                 url={data.songUrl}
                 textPrimary={data.title}
-                textSecondary={data.artist}
+                textSecondary={
+                  data.type === 'show' 
+                    ? `${data.showName} ・ ${data.showPublisher}`
+                    : data.artist
+                }
               />
             </Flex>
           </Flex>
