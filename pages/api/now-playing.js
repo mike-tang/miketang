@@ -23,6 +23,7 @@ const handler = async (req, res) => {
   const album = track.item.album.name
   const albumImageUrl = track.item.album.images[0].url
   const trackUrl = track.item.external_urls.spotify
+  const playlistUrl = track.context.external_urls.spotify
 
   res.setHeader(
     'Cache-Control',
@@ -35,7 +36,8 @@ const handler = async (req, res) => {
     artist,
     isPlaying,
     trackUrl,
-    title
+    title,
+    playlistUrl
   })
 }
 
