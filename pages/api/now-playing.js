@@ -25,7 +25,7 @@ const handler = async (req, res) => {
   const artist = track.item.artists?.map((_artist) => _artist.name).join(', ')
   const showName = track.item.show?.name
   const imageUrl = track.item.album?.images[0].url
-  const trackUrl = track.item.external_urls.spotify
+  const trackUrl = track.item.external_urls?.spotify
 
   res.setHeader(
     'Cache-Control',
