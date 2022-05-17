@@ -8,7 +8,7 @@ import { ListItemLink } from '@/components/links'
 const NowPlaying = () => {
   const [loading, setLoading] = useState(true)
 
-  const fetcher = (url) => fetch(url).then((r) => r.json())
+  const fetcher = (url: string) => fetch(url).then((r) => r.json())
   const { data } = useSWR('/api/now-playing', fetcher)
   
   useEffect(() => {
@@ -56,7 +56,7 @@ const NowPlaying = () => {
               }}
             >
               <ListItemLink 
-                icon={<AudioAnimation />}
+                icon={<AudioAnimation alt="Now playing" />}
                 url={data.songUrl}
                 textPrimary={data.title}
                 textSecondary={

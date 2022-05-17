@@ -23,7 +23,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const isPlaying = track.is_playing
   const type = track.item.type // episode, track
   const title = track.item.name
-  const artist = track.item.artists?.map((_artist) => _artist.name).join(', ')
+  const artist = track.item.artists?.map((_artist: any) => _artist.name).join(', ')
   const showName = track.item.show?.name
   const imageUrl = track.item.album?.images[0].url
   const trackUrl = track.item.external_urls?.spotify

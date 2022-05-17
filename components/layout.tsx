@@ -3,7 +3,7 @@ import { Flex } from 'theme-ui'
 import Head from '@/components/head'
 import Nav from '@/components/nav'
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: any) => {
   return (
     <>
       <Head />

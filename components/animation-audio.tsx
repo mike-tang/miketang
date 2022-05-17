@@ -18,7 +18,11 @@ const pulse = keyframes`
 	}
 `
 
-const AudioAnimation = ({alt, ...props}) => {
+interface Props {
+  alt: string
+}
+
+const AudioAnimation = (props: Props) => {
   return (
     <svg 
       {...props}
@@ -26,7 +30,7 @@ const AudioAnimation = ({alt, ...props}) => {
       fill="currentColor" 
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>{alt}</title>
+      <title>{props.alt}</title>
 
       <rect x="0.5" y="6" width="1" height="4" rx="0.5" fill="currentColor" 
         sx={{ 

@@ -1,7 +1,12 @@
 /** @jsxImportSource theme-ui */
 import { Themed, Flex, Text } from 'theme-ui'
 
-const TextLink = ({text, url, ...props}) => {
+interface TextLinkProps {
+  text: string,
+  url: string
+}
+
+const TextLink = ({url, text, ...props}: TextLinkProps) => {
   return (
     <>
       <Themed.a
@@ -19,7 +24,13 @@ const TextLink = ({text, url, ...props}) => {
   )
 }
 
-const ListItemLink = ({icon, textPrimary, textSecondary, url, ...props}) => {
+const ListItemLink = ({icon, textPrimary, textSecondary, url, ...props}: {
+  icon: any,
+  textPrimary: string,
+  textSecondary: string,
+  url: string
+}) => {
+// const ListItemLink = (icon: any, textPrimary: string, textSecondary: string, url: string, {...props}) => {
   return (
     <>
       {/* Link */}
