@@ -1,12 +1,15 @@
-export default {
+import { get } from 'theme-ui'
+import { makeTheme } from '@theme-ui/css/utils'
+
+export const theme = makeTheme ({
   // Configuration flags: https://theme-ui.com/theming#configuration-flags
   config: {
     useCustomProperties: true, // Enables CSS custom properties to help mitigate a flash of unstyled content during rehydration
     useRootStyles: true, // Adds styles defined in theme.styles.root to the <body> element along with color and background-color
     initialColorModeName: 'dark', // The key used for the top-level color palette in theme.colors
-    useColorSchemeMediaQuery: 'true', // Initializes the color mode based on the prefers-color-scheme media query
-    useBorderBox: 'true', // Adds a global box-sizing: border-box style,
-    useLocalStorage: 'true', // Persists the color mode in localStorage
+    useColorSchemeMediaQuery: true, // Initializes the color mode based on the prefers-color-scheme media query
+    useBorderBox: true, // Adds a global box-sizing: border-box style,
+    useLocalStorage: true, // Persists the color mode in localStorage
   },
   breakpoints: [
     '688px',
@@ -129,7 +132,7 @@ export default {
       justifyContent: 'center',
       color: 'foreground.primary',
       zIndex: 100,
-      boxShadow: theme => `inset 0px -1px 0px ${theme.colors.border.default}`,
+      boxShadow: theme => `inset 0px -1px 0px ${get(theme, 'colors.border.default')}`,
       position: 'fixed',
       top: 0,
       left: 0,
@@ -153,7 +156,7 @@ export default {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      mt: theme => theme.sizes.nav,
+      mt: theme => get(theme, 'sizes.nav'),
       mb: 9,
       color: 'foreground.primary',
     },
@@ -163,7 +166,7 @@ export default {
       justifyContent: 'center',
       flexDirection: 'column',
       boxShadow: theme => [
-        `inset 0px -1px 0px ${theme.colors.border.default}`, 
+        `inset 0px -1px 0px ${get(theme, 'colors.border.default')}`, 
         'none'
       ],
       transition: 'box-shadow 0.2s ease-out',
@@ -181,7 +184,7 @@ export default {
         py: 6,
         boxShadow: theme => [
           'none', 
-          `inset 0px -1px 0px ${theme.colors.border.default}`, 
+          `inset 0px -1px 0px ${get(theme, 'colors.border.default')}`, 
         ],
         transition: 'box-shadow 0.2s ease-out'
       }
@@ -191,14 +194,14 @@ export default {
       pb: 4,
       backgroundColor: 'background.primary',
       color: 'foreground.primary',
-      // boxShadow: theme => `inset 0px 1px 0px ${theme.colors.border.default}`,
+      // boxShadow: theme => `inset 0px 1px 0px ${get(theme.colors.border || {}, 'default') as string}`,
       transition: 'background-color 0.2s ease-out',
       inner: {
         width: '100%',
         maxWidth: 'container',
         margin: '0 auto',
         pt: '24px',
-        boxShadow: theme => `inset 0px 1px 0px ${theme.colors.border.default}`,
+        boxShadow: theme => `inset 0px 1px 0px ${get(theme, 'colors.border.default')}`,
         transition: 'all 0.2s ease-out'
       }
     }
@@ -393,20 +396,20 @@ export default {
         color: 'background.primary'
       },
       underlined: {
-        backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.secondary}, ${theme.colors.foreground.secondary})`,
+        backgroundImage: theme => `linear-gradient(to right, ${get(theme, 'colors.foreground.secondary')}, ${get(theme, 'colors.foreground.secondary')})`,
         backgroundSize: '100% 1px',
         backgroundPosition: '0 100%',
         backgroundRepeat: 'no-repeat',
         ':hover': {
           color: 'foreground.primary',
           textDecoration: 'none',
-          backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.primary}, ${theme.colors.foreground.primary})`,
+          backgroundImage: theme => `linear-gradient(to right, ${get(theme, 'colors.foreground.primary')}, ${get(theme, 'colors.foreground.primary')})`,
           transition: 'all 0.2s ease-out',
         },
         ':focus': {
           color: 'foreground.primary',
           textDecoration: 'none',
-          backgroundImage: theme => `linear-gradient(to right, ${theme.colors.foreground.primary}, ${theme.colors.foreground.primary})`,
+          backgroundImage: theme => `linear-gradient(to right, ${get(theme, 'colors.foreground.primary')}, ${get(theme, 'colors.foreground.primary')})`,
           transition: 'all 0.2s ease-out',
         },
         '::selection': {
@@ -563,4 +566,4 @@ export default {
       },
     }
   }
-}
+})
