@@ -1,6 +1,7 @@
+import { NextApiRequest, NextApiResponse } from 'next'
 import { getNowPlaying } from '@/utils/spotify'
 
-const handler = async (req, res) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const response = await getNowPlaying()
 
   if (response.status === 204 || response.status > 400) {
