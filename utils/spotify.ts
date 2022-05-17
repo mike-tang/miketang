@@ -14,8 +14,8 @@ const getAccessToken = async () => {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
     body: new URLSearchParams({
-      grant_type: 'refresh_token',
-      refresh_token
+      'grant_type': 'refresh_token',
+      'refresh_token': refresh_token ? refresh_token : ''
     })
   })
 
