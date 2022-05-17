@@ -19,7 +19,9 @@ const ThemeSelector = () => {
         }}
         onMouseUp={() => {
           // Blur the focus after button is clicked
-          document.activeElement.blur()
+          if (document.activeElement instanceof HTMLElement) {
+            document.activeElement.blur();
+          }
         }}
       >
         {colorMode === 'dark' && 
