@@ -3,7 +3,8 @@ import { Themed, Flex, Text } from 'theme-ui'
 
 interface TextLinkProps {
   text: string,
-  url: string
+  url: string,
+  sx?: any
 }
 
 const TextLink = ({url, text, ...props}: TextLinkProps) => {
