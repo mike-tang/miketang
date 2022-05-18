@@ -3,7 +3,7 @@ import { Flex } from 'theme-ui'
 import Head from '@/components/head'
 import Nav from '@/components/nav'
 
-const Layout = ({ children }: any) => {
+const AppLayout = ({ children }: any) => {
   return (
     <>
       <Head />
@@ -28,4 +28,4 @@ const Layout = ({ children }: any) => {
   )
 }
 
-export default Layout
+export default AppLayout

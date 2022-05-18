@@ -3,15 +3,15 @@ import '@/styles/global.css'
 import React from 'react'
 import { ThemeProvider } from 'theme-ui'
 import { theme } from '@/styles/theme'
-import Layout from '@/layouts/app'
+import AppLayout from '@/layouts/app'
 
 const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Layout>
+      <AppLayout>
         <Component {...pageProps} />
-      </Layout>
+      </AppLayout>
     </ThemeProvider>
   )
 }
