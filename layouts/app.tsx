@@ -3,10 +3,15 @@ import { Flex } from 'theme-ui'
 import Head from '@/components/head'
 import Nav from '@/components/nav'
 
-const AppLayout = ({ children }: any) => {
+type AppLayoutProps = {
+  title?: string,
+  children?: React.ReactNode;
+}
+
+const AppLayout = ({ title, children }: AppLayoutProps) => {
   return (
     <>
-      <Head />
+      <Head title={title} />
       <Flex
         sx={{
           flexDirection: 'column',

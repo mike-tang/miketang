@@ -2,12 +2,19 @@ import NextHead from 'next/head'
 
 const ogImage = 'https://res.cloudinary.com/miketang/image/upload/v1606712282/og-image_aan6rq.png'
 
+type HeadProps = {
+  title?: string,
+  description?: string,
+  image?: string,
+  url?: string
+}
+
 const Head = ({
   title = 'Mike Tang',
   description = 'Product designer and developer',
   image = ogImage,
   url = 'https://tang.is/'
-}) => {
+}: HeadProps) => {
   
   return (
     <NextHead>
