@@ -425,6 +425,8 @@ export const theme = makeTheme ({
       display: 'inline-flex',
       lineHeight: 0,
       color: 'foreground.primary',
+      textDecoration: 'none',
+      cursor: 'pointer',
       transition: 'all 0.2s ease-out',
       ':hover': {
         color: 'foreground.secondary',

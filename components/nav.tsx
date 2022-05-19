@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import Link from 'next/link'
-import { Themed, Flex } from 'theme-ui'
+import { Flex } from 'theme-ui'
 import Logo from '@/components/logo'
 import ThemeSelector from '@/components/theme-selector'
 
@@ -23,7 +23,7 @@ const Nav = () => {
             }}
           >
             <Link href="/" passHref>
-              <Themed.a 
+              <a 
                 aria-label="Go to Mike Tang's home page"
                 sx={{ 
                   variant: 'links.logo',
@@ -31,7 +31,7 @@ const Nav = () => {
                 }}
               >
                 <Logo />
-              </Themed.a>
+              </a>
             </Link>
           </Flex>
 
