@@ -5,7 +5,7 @@ import Nav from '@/components/nav'
 
 type AppLayoutProps = {
   title?: string,
-  children?: React.ReactNode;
+  children?: React.ReactNode
 }
 
 const AppLayout = ({ title, children }: AppLayoutProps) => {
