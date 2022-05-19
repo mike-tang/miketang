@@ -40,6 +40,7 @@ export const theme = makeTheme ({
     bold: 700
   },
   lineHeights: {
+    oneLine: 1,
     body: 1.6,
     heading: 1.25,
     button: '40px',
@@ -248,7 +249,7 @@ export const theme = makeTheme ({
     },
     overline: {
       fontFamily: 'body',
-      lineHeight: 'body',
+      lineHeight: 'oneLine',
       fontWeight: 'bold',
       fontSize: 0,
       textTransform: 'uppercase',
