@@ -147,7 +147,7 @@ export const theme = makeTheme ({
         mx: 4,
         my: 0,
         px: 0,
-        py: 4,
+        py: [3, 4, 4],
         transition: 'all 0.2s ease-out'
       }
     },
