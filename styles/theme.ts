@@ -191,18 +191,21 @@ export const theme = makeTheme ({
       }
     },
     footer: {
-      px: 3,
-      pb: 4,
-      backgroundColor: 'background.primary',
+      width: '100%',
+      display: 'flex',
+      justifyContent: 'center',
       color: 'foreground.primary',
-      // boxShadow: theme => `inset 0px 1px 0px ${get(theme.colors.border || {}, 'default') as string}`,
-      transition: 'background-color 0.2s ease-out',
+      boxShadow: theme => `inset 0px 1px 0px ${get(theme, 'colors.border.default')}`,
+      backgroundColor: 'background.primary',
+      transition: 'all 0.2s ease-out',
       inner: {
         width: '100%',
         maxWidth: 'container',
-        margin: '0 auto',
-        pt: '24px',
-        boxShadow: theme => `inset 0px 1px 0px ${get(theme, 'colors.border.default')}`,
+        flexDirection: 'column',
+        mx: 4,
+        my: 0,
+        px: 0,
+        py: 0,
         transition: 'all 0.2s ease-out'
       }
     }

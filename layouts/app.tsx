@@ -2,6 +2,7 @@
 import { Flex } from 'theme-ui'
 import Head from '@/components/head'
 import Nav from '@/components/nav'
+import Footer from '@/components/footer'
 
 type AppLayoutProps = {
   title?: string,
@@ -28,6 +29,7 @@ const AppLayout = ({ title, children }: AppLayoutProps) => {
         >
           {children}
         </Flex>
+        <Footer />
       </Flex>
     </>
   )

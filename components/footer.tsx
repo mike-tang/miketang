@@ -1,5 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Flex } from 'theme-ui'
+import Connect from '@/components/content/connect'
+import NowPlaying from '@/components/content/now-playing'
 
 const Footer = () => {
 
@@ -15,7 +17,8 @@ const Footer = () => {
         <Flex
           variant="layout.footer.inner"
         >
-          {/* Footer content */}
+          <Connect />
+          <NowPlaying />
         </Flex>
       </Flex>
     </>
