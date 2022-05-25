@@ -40,12 +40,6 @@ const Connect = () => {
             textPrimary="GitHub"
             textSecondary="@mike-tang"
           />
-          <ListItemLink 
-            icon={<GrLinkedinOption size={24} />}
-            url="https://www.linkedin.com/in/mctang/"
-            textPrimary="LinkedIn"
-            textSecondary="@mctang"
-          />
         </Flex>
 
       </Flex>
