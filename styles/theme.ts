@@ -155,10 +155,10 @@ export const theme = makeTheme ({
       width: '100%',
       display: 'flex',
       flexDirection: 'column',
+      flex: '1 0 0',
       alignItems: 'center',
       justifyContent: 'center',
       mt: theme => get(theme, 'sizes.nav'),
-      mb: 9,
       color: 'foreground.primary',
     },
     section: {
