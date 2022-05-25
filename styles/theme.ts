@@ -17,7 +17,7 @@ export const theme = makeTheme ({
     '1024px'
   ],
   sizes: {
-    nav: '72px',
+    nav: ['72px', '88px', '88px'],
     container: 640,
     button: '40px',
     input: '40px',
