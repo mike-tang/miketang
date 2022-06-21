@@ -10,16 +10,11 @@ const Footer = () => {
       <Flex 
         as="footer" 
         sx={{
-          width: '100%',
           variant: 'layout.footer',
         }}
       >
-        <Flex
-          variant="layout.footer.inner"
-        >
-          <Connect />
-          <NowPlaying />
-        </Flex>
+        <Connect />
+        <NowPlaying />
       </Flex>
     </>
   )

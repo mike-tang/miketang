@@ -194,6 +194,7 @@ export const theme = makeTheme ({
       width: '100%',
       display: 'flex',
       justifyContent: 'center',
+      flexDirection: 'column',
       color: 'foreground.primary',
       boxShadow: theme => `inset 0px 1px 0px ${get(theme, 'colors.border.default')}`,
       backgroundColor: 'background.primary',
