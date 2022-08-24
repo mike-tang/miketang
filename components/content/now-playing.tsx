@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Flex, Text } from 'theme-ui'
+import { IoTriangleSharp } from 'react-icons/io5'
 import { AudioAnimation } from '@/components/animation-audio'
 import useSWR from 'swr'
 import { useState, useEffect } from 'react'
@@ -19,36 +20,28 @@ const NowPlaying = () => {
 
   return (
     <>
-      {/* Loading */}
-      { loading && ''}
-
-      {/* No song playing */}
-      { !loading && 
-        data &&
-        !data.isPlaying &&
-        ''
-      }
-
-      {/* Song is playing */}
-      { !loading && 
-        data?.isPlaying &&
-        
+      <Flex
+        as="section"
+        variant="layout.section"
+      >
         <Flex
-          as="section"
-          variant="layout.section"
+          variant="layout.section.inner"
         >
-          <Flex
-            variant="layout.section.inner"
+          {/* Section title */}
+          <Text 
+            variant="overline"
+            pb={4}
           >
-            {/* Section title */}
-            <Text 
-              variant="overline"
-              pb={4}
-            >
-              Now playing
-            </Text>
+            Listening to
+          </Text>
 
-            {/* Widget */}
+          {/* Loading */}
+          { loading && ''}
+
+          {/* No song playing */}
+          { !loading && 
+            data &&
+            !data.isPlaying &&
             <Flex
               sx={{
                 flexDirection: 'column',
@@ -56,7 +49,25 @@ const NowPlaying = () => {
               }}
             >
               <ListItemLink 
-                icon={<AudioAnimation alt="Now playing" />}
+                icon={<IoTriangleSharp size={24} />}
+                url='https://www.youtube.com/watch?v=Y8ACyHYsb6Q'
+                textPrimary='silence'
+                textSecondary=''
+              />
+            </Flex>
+          }
+
+          {/* Song is playing */}
+          { !loading && 
+            data?.isPlaying &&
+            <Flex
+              sx={{
+                flexDirection: 'column',
+                gap: 4
+              }}
+            >
+              <ListItemLink 
+                icon={<AudioAnimation alt="Listening to" />}
                 url={data.songUrl}
                 textPrimary={data.title}
                 textSecondary={
@@ -66,9 +77,9 @@ const NowPlaying = () => {
                 }
               />
             </Flex>
-          </Flex>
+          }
         </Flex>
-      }
+      </Flex>
 
     </>
   )
