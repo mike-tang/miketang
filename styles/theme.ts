@@ -80,7 +80,7 @@ export const theme = makeTheme ({
       dark: '#007B7A'
     },
     border: {
-      default: '#333',
+      default: '#222',
       active: '#DDD'
     },
     modalOverlay: 'rgba(0,0,0, 0.75)',
@@ -117,7 +117,7 @@ export const theme = makeTheme ({
           dark: '#007B7A'
         },
         border: {
-          default: '#DDDDDD',
+          default: '#EEEEEE',
           active: '#444'
         },
         modalOverlay: 'rgba(0,0,0, 0.75)',
