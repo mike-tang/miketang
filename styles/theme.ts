@@ -530,7 +530,7 @@ export const theme = makeTheme ({
       p: 0,
       fontSize: 0,
       fontWeight: 'bold',
-      color: 'foreground.primary',
+      color: 'foreground.secondary',
       bg: 'transparent',
       borderStyle: 'outline',
       borderWidth: 'outline',
