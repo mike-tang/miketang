@@ -157,7 +157,7 @@ export const theme = makeTheme ({
       flexDirection: 'column',
       flex: '1 0 0',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
       mt: theme => get(theme, 'sizes.nav'),
       color: 'foreground.primary',
     },
