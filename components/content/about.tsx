@@ -12,7 +12,7 @@ const About = () => {
         variant="layout.section.inner"
         sx={{
           py: [9, 9, 9],
-          minHeight: '64vh',
+          minHeight: '56vh',
           justifyContent: 'center'
         }}
       >
@@ -21,15 +21,14 @@ const About = () => {
             lineHeight: 'heading',
             textAlign: 'left',
             fontWeight: 'heading',
-            pb: 4,
-            letterSpacing: ['-2px', '-3px', '-4px']
+            pb: 4
           }}
         >
           Mike Tang
         </Themed.h1>
         <Themed.p 
           sx={{
-            fontSize: 3,
+            fontSize: 2,
             color: 'foreground.secondary',
             lineHeight: 'body',
             textAlign: 'left',
