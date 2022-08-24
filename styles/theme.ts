@@ -440,14 +440,14 @@ export const theme = makeTheme ({
       textDecoration: 'none',
       cursor: 'pointer',
       transition: 'all 0.2s ease-out',
-      ':hover': {
-        color: 'foreground.secondary',
-        transition: 'all 0.2s ease-out',
-      },
-      ':focus': {
-        color: 'foreground.secondary',
-        transition: 'all 0.2s ease-out',
-      },
+      // ':hover': {
+      //   color: 'foreground.secondary',
+      //   transition: 'all 0.2s ease-out',
+      // },
+      // ':focus': {
+      //   color: 'foreground.secondary',
+      //   transition: 'all 0.2s ease-out',
+      // },
     },
     iconOutline: {
       display: 'flex',
