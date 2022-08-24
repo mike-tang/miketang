@@ -82,7 +82,7 @@ const ListItemLink = ({icon, textPrimary, textSecondary, url, ...props}: {
               width: '100%',
               fontSize: 2,
               lineHeight: '16px',
-              fontWeight: 'bold',
+              fontWeight: 'body',
               pb: 2,
               whiteSpace: 'nowrap',
               overflow: 'hidden',

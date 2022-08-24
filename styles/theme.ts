@@ -460,7 +460,7 @@ export const theme = makeTheme ({
       p: 2,
       fontSize: 0,
       fontWeight: 'bold',
-      color: 'foreground.primary',
+      color: 'foreground.secondary',
       bg: 'transparent',
       borderStyle: 'outline',
       borderWidth: 'outline',
