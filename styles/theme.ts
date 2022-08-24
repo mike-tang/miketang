@@ -244,6 +244,7 @@ export const theme = makeTheme ({
       lineHeight: 'body',
       fontWeight: 'body',
       fontSize: 2,
+      letterSpacing: '-0.01096em',
       transition: 'color 0.2s ease-out',
       '::selection': {
         textShadow: 'none',
@@ -281,7 +282,8 @@ export const theme = makeTheme ({
     },
     h1: {
       color: 'foreground.primary',
-      fontSize: [6, 7, 8],
+      fontSize: 5,
+      letterSpacing: '-0.02213em',
       variant: 'text.heading',
       m: 0,
     },
@@ -289,30 +291,35 @@ export const theme = makeTheme ({
       color: 'foreground.primary',
       variant: 'text.heading',
       fontSize: 4,
+      letterSpacing: '-0.01949em',
       m: 0,
     },
     h3: {
       color: 'foreground.primary',
       variant: 'text.heading',
       fontSize: 3,
+      letterSpacing: '-0.01666em',
       m: 0,
     },
     h4: {
       color: 'foreground.primary',
       variant: 'text.heading',
       fontSize: 2,
+      letterSpacing: '-0.01096em',
       m: 0,
     },
     h5: {
       color: 'foreground.primary',
       variant: 'text.heading',
       fontSize: 1,
+      letterSpacing: '-0.00622em',
       m: 0,
     },
     h6: {
       color: 'foreground.primary',
       variant: 'text.heading',
       fontSize: 0,
+      letterSpacing: '0.00049em',
       m: 0,
     },
     p: {
