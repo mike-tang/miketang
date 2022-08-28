@@ -68,7 +68,7 @@ const NowPlaying = () => {
             >
               <ListItemLink 
                 icon={<AudioAnimation alt="Listening to" />}
-                url={data.songUrl}
+                url={data.trackUrl}
                 textPrimary={data.title}
                 textSecondary={
                   data.type === 'episode' 
