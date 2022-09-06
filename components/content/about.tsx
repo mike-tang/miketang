@@ -38,7 +38,7 @@ const About = () => {
           {`Designing systems and interfaces. Developing performant software and digital services. Building `}
           <TextLink 
             text="Ko"
-            url="https://ko.education"
+            url="https://ko.xyz"
             sx={{
               variant: 'links.text',
               color: '#7755FF'
