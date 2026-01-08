@@ -22,16 +22,15 @@ const Nav = () => {
               flex: '0 1 auto'
             }}
           >
-            <Link href="/" passHref>
-              <a 
-                aria-label="Go to Mike Tang's home page"
-                sx={{ 
-                  variant: 'links.logo',
-                  maxHeight: '24px'
-                }}
-              >
-                <Logo />
-              </a>
+            <Link
+              href="/"
+              aria-label="Go to Mike Tang's home page"
+              sx={{
+                variant: 'links.logo',
+                maxHeight: '24px'
+              }}
+            >
+              <Logo />
             </Link>
           </Flex>
 

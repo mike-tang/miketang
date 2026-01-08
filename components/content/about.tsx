@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import { Themed, Flex } from 'theme-ui'
+import { Flex, Heading, Paragraph } from 'theme-ui'
 import { TextLink } from '@/components/links'
 
 const About = () => {
@@ -16,7 +16,8 @@ const About = () => {
           justifyContent: 'center'
         }}
       >
-        <Themed.h1
+        <Heading
+          as="h1"
           sx={{
             lineHeight: 'heading',
             textAlign: 'left',
@@ -25,8 +26,8 @@ const About = () => {
           }}
         >
           Mike Tang
-        </Themed.h1>
-        <Themed.p 
+        </Heading>
+        <Paragraph
           sx={{
             fontSize: 2,
             color: 'foreground.secondary',
@@ -36,7 +37,7 @@ const About = () => {
           }}
         >
           {`Designing systems and interfaces. Developing performant software and digital services. Building `}
-          <TextLink 
+          <TextLink
             text="Ko"
             url="https://ko.xyz"
             sx={{
@@ -45,7 +46,7 @@ const About = () => {
             }}
           />
           {` to support the education economy.`}
-        </Themed.p>
+        </Paragraph>
       </Flex>
     </Flex>
   )
