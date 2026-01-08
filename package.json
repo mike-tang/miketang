@@ -2,6 +2,10 @@
   "name": "miketang",
   "version": "1.0.0",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
