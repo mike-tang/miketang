@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Flex, Text } from 'theme-ui'
-import { BsTwitter, BsGithub } from 'react-icons/bs'
+import { BsTwitterX, BsGithub } from 'react-icons/bs'
 import { ListItemLink } from '@/components/links'
 
 const Connect = () => {
@@ -27,10 +27,10 @@ const Connect = () => {
             gap: 4
           }}
         >
-          <ListItemLink 
-            icon={<BsTwitter size={24} />}
-            url="https://www.twitter.com/miketang/"
-            textPrimary="Twitter"
+          <ListItemLink
+            icon={<BsTwitterX size={24} />}
+            url="https://x.com/miketang/"
+            textPrimary="X"
             textSecondary="@miketang"
           />
           <ListItemLink 
